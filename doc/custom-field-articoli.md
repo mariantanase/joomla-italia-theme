@@ -8,8 +8,8 @@ La prima operazione da fare è suddividere i custom field per gruppi, in base al
 
 ### Gruppo campi Luoghi
 
-Creare un nuovo gruppo di campi denominato “Luoghi”. 
-Quindi andare in Contenuto -> Gruppi di campi -> Nuovo -> compilare il campo titolo “Luoghi”. 
+Creare un nuovo gruppo di campi di tipo “Articolo” denominato “Luoghi”.
+Quindi andare in Contenuto -> Gruppi di campi -> Filtrare la voce in alto a sinistra in Articolo -> Nuovo -> compilare il campo titolo “Luoghi”. 
 
 ### Descrizione
 
@@ -36,33 +36,6 @@ Nella tab Opzioni impostare:
 - Mostra etichetta: mostra 
 - Visualizza il campo: dopo il contenuto del display 
 - Layout: generale 
-- Mostra se di sola lettura: eredita
-
-### Dove si trova
-
-Creare un nuovo campo e chiamarlo esattamente così. 
-
-All’interno della tab Generale impostare i seguenti parametri: 
-
-- Tipo: Sottocampo ( subform ) 
-- Nome: dove-si-trova 
-- Etichetta: Dove si trova 
-- Obbligatorio: No 
-- Ripetibile: No 
-- Campi: Nome Sede (text) Indirizzo (text) Orari (editor) Gps (text) Email (text) PEC (text) Telefono (text) 
-- Stato: pubblicato 
-- Gruppo di campi: luoghi 
-- Categoria: I luoghi
-
-![custom-field-dove-si-trova](https://jit.protocollicreativi.it/templates/joomla-italia-theme/doc/img/custom-field-dove-si-trova.png)
-
-Nella tab Opzioni impostare: 
-
-- Modificabile in: entrambi 
-- Layout: predefinito 
-- Mostra etichetta: mostra 
-- Visualizza il campo: dopo il contenuto del display 
-- Layout: h4-titolosubform 
 - Mostra se di sola lettura: eredita
 
 ### Servizi presenti
@@ -182,6 +155,58 @@ Nella tab Opzioni impostare:
 - Layout: numeri 
 - Mostra se di sola lettura: eredita
 
+### Dove si trova
+
+Creare un nuovo campo e chiamarlo esattamente così. 
+
+All’interno della tab Generale impostare i seguenti parametri: 
+
+- Tipo: Sottocampo ( subform ) 
+- Nome: dove-si-trova 
+- Etichetta: Dove si trova 
+- Obbligatorio: No 
+- Ripetibile: No 
+- Campi: Nome Sede (text) Indirizzo (text) Orari (editor) Gps (text) Email (text) PEC (text) Telefono (text) 
+- Stato: pubblicato 
+- Gruppo di campi: luoghi 
+- Categoria: I luoghi
+
+![custom-field-dove-si-trova](https://jit.protocollicreativi.it/templates/joomla-italia-theme/doc/img/custom-field-dove-si-trova.png)
+
+Nella tab Opzioni impostare: 
+
+- Modificabile in: entrambi 
+- Layout: predefinito 
+- Mostra etichetta: mostra 
+- Visualizza il campo: dopo il contenuto del display 
+- Layout: h4-titolosubform 
+- Mostra se di sola lettura: eredita
+
+Layout di tipo Card per il campo gruppi Luoghi.
+
+### DModalità di accesso
+Creare un nuovo campo e chiamarlo "Modalità di accesso"
+
+All’interno della tab Generale impostare i seguenti parametri:
+
+- Tipo: Editor (editor)
+- Nome: modalita-di-accesso
+- Etichetta: Modalità di accesso
+- Obbligatorio: Sì
+- Mostra pulsanti: Nascondi tutti i pulsanti
+- Filtro: Usa impostazioni Plugin
+- Stato: Pubblicato
+- Gruppo di campi: Luoghi
+- Categoria: I luoghi
+
+Nella tab Opzioni impostare:
+
+- Modificabile in: entrambi
+- Mostra etichetta: mostra
+- Visualizza il campo: dopo il contenuto del display
+- Layout: card-modalita-accesso
+- Mostra se di sola lettura: eredita
+
 ### Dettagli edificio
 
 Creare un nuovo campo e chiamarlo esattamente così. 
@@ -192,7 +217,6 @@ All’interno della tab Generale impostare i seguenti parametri:
 - Nome: dettagli-edificio 
 - Etichetta: Dettagli edificio 
 - Obbligatorio: No 
-- Usa solo in sottomodulo: No 
 - Campi: Anno di costruzione (text) Numero di piani (text) 
 - Stato: Pubblicato 
 - Gruppi di campi: Luoghi 
@@ -221,8 +245,7 @@ All’interno della tab Generale impostare i seguenti parametri:
 - Obbligatorio: No 
 - Usa solo in sottomodulo: Sì 
 - Stato: Pubblicato 
-- Gruppi di campi: Luoghi 
-- Categoria: I luoghi
+- Gruppi di campi: Luoghi
 
 ![custom-field-immagine](https://jit.protocollicreativi.it/templates/joomla-italia-theme/doc/img/custom-field-immagine.png)
 
@@ -1292,7 +1315,7 @@ Nella tab Opzioni impostare:
 - Layout: h4-titolosubform 
 - Mostra se di sola lettura: eredita
 
-### Date e orari
+### Date e Orari
 
 Creare un nuovo campo e chiamarlo esattamente così. 
 
@@ -1300,7 +1323,7 @@ All’interno della tab Generale impostare i seguenti parametri:
 
 - Tipo: Sottocampo ( subform ) 
 - Nome: date-e-orari 
-- Etichetta: Date e orari 
+- Etichetta: Date e Orari 
 - Obbligatorio: No 
 - Ripetibile: Sì 
 - Campi: Riga Data Tempi e scadenze (calendar) Riga Descrizione data tempi e scadenze (textarea) - Stato: Pubblicato 
